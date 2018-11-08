@@ -17,7 +17,7 @@ for(let item of list) {
     let safe = true;
     for(let c of coments) {
       count ++;
-      let ratio = similar.jaccard(item.coments[index], c);
+      let ratio = similar.isSimilar(item.coments[index], c);
       if(ratio >= target) {
         safe = false;
         break;
